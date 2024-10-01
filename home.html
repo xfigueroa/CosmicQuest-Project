@@ -5,112 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cosmic Quest</title>
     <link rel="stylesheet" href="./assets/css/home.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(to bottom, white, black);
-            color: rgb(244, 240, 240);
-        }
-        
-        .banner {
-            width: calc(100% - 40px); 
-            height: 100px; 
-            overflow: hidden; 
-            margin: 20px auto; 
-        }
-        .banner img {
-            width: 100%; 
-            height: auto;
-        }
-        nav {
-            background-color: #ADD8E6; 
-            margin: 0 auto; 
-            width: calc(100% - 40px); 
-        }
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center; 
-            align-items: center;
-        }
-        nav ul li {
-            margin: 0 10px; 
-            padding: 10px 15px; 
-            border-radius: 5px; 
-        }
-        nav ul li a {
-            color: rgb(0, 0, 0); 
-            text-decoration: none;
-        }
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
-        .logo {
-            height: 80px; 
-            margin: 0 15px; 
-        }
-        .content {
-            padding: 20px;
-            text-align: center;
-        }
-        footer {
-            background-color: #ADD8E6; 
-            text-align: center; 
-            padding: 10px 0; 
-            position: relative; 
-            bottom: 0; 
-            width: calc(100% - 40px); 
-            margin: 20px auto; 
-            color: black; 
-        }
-        .side-by-side {
-            display: flex;
-            justify-content: space-around;
-            margin: 20px auto;
-            width: calc(100% - 40px);
-        }
-        .section {
-            background-color: #ADD8E6;
-            padding: 20px;
-            border-radius: 5px;
-            width: 45%;
-            text-align: center;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        .section:hover {
-            background-color: #A0C4E1;
-        }
-    </style>
+    
 </head>
 <body>
     <header>
         <div class="banner">
-            <img src="https://i.postimg.cc/13Cw2kYM/background-header.png" alt="Banner Image">
-     </div>
+            <img src="./assets/images/Cosmic-Quest-Logo.png" alt="Logo" class="logo">
+            <img class="banner-bg" src="https://i.postimg.cc/13Cw2kYM/background-header.png" alt="Banner Image">
+            
+        </div>
+        
      <nav>
          <ul>
              <li><a href="#about">About</a></li>
              <li><a href="#events">Events</a></li>
              <li><a href="#Tickets">Tickets</a></li>
-             <li>
-                    <img src="https://i.postimg.cc/nz0M6pCL/Cosmic-Quest-Logo.png" alt="Logo" class="logo">
+                <li class="navDummy">
+                    
                 </li>
                 <li><a href="#faq">FAQs</a></li>
                 <li><a href="#shop">Shopping</a></li>
                 <li><a href="#contactUs">Contact Us</a></li>
             </ul>
         </nav>
-    </header>
-    <!-------------- header ------------------------>
+    </header><!-------------- Header End------------------------>
+    
     <main>
         <div class="mainBoxtop">
-            <div class="main-box1 joinUs-box">
-                <h2>Join Us</h2>
+            <div class="main-box1 aboutUs-box">
+                <div class="aboutUs-title">
+                    <h2>About Us</h2>
+                    <div></div>
+                </div>
+                
 
                 <p>
                 Be a pioneer in an extraordinary adventure as we gather on Mars! This is your chance to be part of a groundbreaking community where innovation meets exploration. With a calendar packed full of thrilling events, from interstellar workshops to cosmic celebrations, there's something for everyone. Don't miss the opportunity to connect, collaborate, and create unforgettable memories in the Red Planet's vibrant atmosphere. Join us and help shape the future of life on Mars!
@@ -118,14 +45,24 @@
                 
             </div>
             <div class="main-box1 thisWeek-box">
+                <div class="thisWeek-title">
                 <h2>This Week</h2>
+                <div class="thisweek-bg"></div>
+                <section>
+                    <div class="list-img"></div>
+                    <div class="list-img"></div>
+                    <div class="list-img"></div>
+                    <div class="list-img"></div>
+                </div>
+                </div>
 
             </div>
         </div>
         <div class="main-box2 upcoming-box">
 
-            <div>
+            <div class="upcoming-sec-title">                
                 <h2>Upcoming Events</h2>
+                <div class="title-background"></div>
             </div>
 
             <div class="upcom-img-box">
@@ -134,10 +71,10 @@
                 <div class="imgBox img3"></div>                
                 <div class="imgBox img4"></div>                
             </div>
-
         </div>
     
-    </main>
+    </main><!-------------- Main End -------------->
+    
     <footer>
         <p>From Team Fiend ©</p>
     </footer>
