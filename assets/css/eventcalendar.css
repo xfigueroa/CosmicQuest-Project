@@ -2,26 +2,42 @@
     box-sizing: border-box;
 }
 
+/*Tags*/
+a {
+    box-shadow: 1px 2px 2px 1px #6CA5DA; 
+    margin: 10px;
+    text-decoration: none;
+}
+
+img {
+    width: 350px;
+    height: 280px;
+}
+
+
+/* Class */
 .event-container {
     display: flex;
     width: auto;
-    height: 400px;
+    height: 420px;
     margin-right: auto;
     margin-left: auto;
     justify-content: center;
 }
 
-a {
-    box-shadow: 1px 2px 2px 1px #6CA5DA; 
-    padding: 10px;
-    margin: 10px;
-    text-decoration: none;
+.eventInfo {
+    color: black;
+    text-align: left;
+    margin-left: 22px;
 }
-img {
-    width: 350px;
-    height: 250px;
-    padding: 20px;
-}
+<<<<<<< HEAD
+/* ID */
+
+
+
+
+
+=======
 header {
     background-color: #f8f8f8; 
     padding: 10px 0;          
@@ -51,3 +67,4 @@ a {
 .logo {
     height: 200px;            
 }
+>>>>>>> bcbac81e777352d57fa70ed484d074f51acacec8
