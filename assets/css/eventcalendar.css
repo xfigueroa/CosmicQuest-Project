@@ -30,9 +30,41 @@ img {
     text-align: left;
     margin-left: 22px;
 }
+<<<<<<< HEAD
 /* ID */
 
 
 
 
 
+=======
+header {
+    background-color: #f8f8f8; 
+    padding: 10px 0;          
+}
+
+nav {
+    display: flex;            
+    justify-content: center;  
+}
+
+ul {
+    list-style-type: none;    
+    padding: 0;               
+    margin: 0;                
+    display: flex;            
+}
+
+li {
+    margin: 0 15px;          
+}
+
+a {
+    text-decoration: none;    
+    color: #333;             
+}
+
+.logo {
+    height: 200px;            
+}
+>>>>>>> bcbac81e777352d57fa70ed484d074f51acacec8
