@@ -135,7 +135,7 @@ footer {
     width: 100%;
 }
 
-.event-container {
+.eventCard {
     display: flex;
     width: auto;
     height: 425px;
