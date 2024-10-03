@@ -18,6 +18,7 @@
 
 html{
     margin: 0;
+    
 }
 
 body {
@@ -93,9 +94,9 @@ nav ul li a:hover {
     right: 0;
     margin-inline: auto;
     margin-block: -4%;     
-    width: 350px;
+    width: 350px;    
 }
-    
+  
 .content {
     padding: 20px;
     text-align: center;
@@ -206,7 +207,10 @@ section{
     text-shadow: 2px 2px 2px black;    
     line-height: 0.5;
 }
-.list-img{
+.list-img:active{
+
+}
+.list-img strong{
     color: var(--secondColor);
 }
 .thisweek-img1{
@@ -231,7 +235,7 @@ section{
     background-size: cover;
 }
 
-section ul{
+section a{
     margin-top: 5px;
     width: 98%;
     height: 70px;
@@ -239,10 +243,12 @@ section ul{
     padding: 0;
     transition: 0.3s ease-in-out; 
     border-radius: 5px;
+    text-decoration: none;
+    color: white;
 }
 
 
-section ul:hover{    
+section a:hover{    
     transform: scale(1.2);
     z-index: 1;
     box-shadow: 0px 0px 25px var(--accent);
@@ -352,7 +358,7 @@ footer {
 
 /* --------------Modals Testin--------------- */
 
-.modal-faqs-contaier{
+.modalContainer{
     background-color: rgba(0,0,0, 0.3);
     position: fixed;
     top: 0;
@@ -366,7 +372,7 @@ footer {
     pointer-events: none;
     transition: opacity 0.3s ease;
 }
-.modal-faqs-contaier.active {
+.modalContainer.active {
     opacity: 1;
     pointer-events: auto;
 }
@@ -374,8 +380,8 @@ footer {
 
 .modal-faqs{
     background-color: white;
-    width: 600px;
-    height: 400px;
+    width: 700px;
+    height: 500px;
     max-width: 100%;
     border-radius: 10px;
     color:black;
@@ -383,6 +389,8 @@ footer {
     padding: 20px 40px;
     overflow: auto;   
 }
+
+
 
 .faqs-title{
     display: flex;    

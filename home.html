@@ -25,7 +25,7 @@
                 <li><a href="#events">Events</a></li>
                 <li><a href="#Tickets">Tickets</a></li>
                 <li class="navDummy"></li>
-                <li><a href="#faq" id="faqs-open">FAQs</a></li>
+                <li><a href="#faq" onclick="toggleModal(0)" id="openModal">FAQs</a></li>
                 <li><a href="#shop">Shopping</a></li>
                 <li><a href="#contactUs">Contact Us</a></li>
             </ul>
@@ -47,10 +47,10 @@
                 <h2>This Week</h2>
                 <div class="thisweek-bg"></div>
                     <section>
-                        <ul class="list-img thisweek-img1"><strong>Alien Invansion Laser Tag</strong><br>Du iv @ 11:00</ul>
-                        <ul class="list-img thisweek-img2"><strong>Dust Surging</strong> <br>Du vi @ 21:00</ul>
-                        <ul class="list-img thisweek-img3"><strong>Fiend Concert</strong> <br>Du ix @ 18:00</ul>
-                        <ul class="list-img thisweek-img4"><strong>Redezvous</strong> <br>Oct x @ 15:00</ul>
+                        <a href="./eventcalendar.html" class="list-img thisweek-img1"><strong>Alien Invansion Laser Tag</strong><br>Du iv @ 11:00</a>
+                        <a href="./eventcalendar.html" class="list-img thisweek-img2"><strong>Dust Surging</strong> <br>Du vi @ 21:00</a>
+                        <a href="./eventcalendar.html" class="list-img thisweek-img3"><strong>Fiend Concert</strong> <br>Du ix @ 18:00</a>
+                        <a href="./eventcalendar.html" class="list-img thisweek-img4"><strong>Redezvous</strong> <br>Oct x @ 15:00</a>
                     </section>
                 </div>
             </div>
@@ -61,10 +61,10 @@
                 <div class="title-background"></div>
             </div>
             <div class="upcom-img-box">
-                <div class="imgBox img1"></div>                 
-                <div class="imgBox img2"></div>                
-                <div class="imgBox img3"></div>                
-                <div class="imgBox img4"></div>                
+                <a href="./eventcalendar.html" class="imgBox img1"></a>                 
+                <a href="./eventcalendar.html" class="imgBox img2"></a>                
+                <a href="./eventcalendar.html" class="imgBox img3"></a>                
+                <a href="./eventcalendar.html" class="imgBox img4"></a>                
             </div>
         </div>
     </main><!-------------- Main End -------------->
@@ -72,7 +72,7 @@
     <footer>
         <p>From Team Fiend ©</p>
     </footer>
-    <div class="modal-faqs-contaier " id="modal-faqs-contaier">
+    <div class="modalContainer" id="modalContaier">
         <div class="modal-faqs">
             <div class="faqs-title">                
                 <h2>FAQS</h2>
@@ -94,7 +94,7 @@
                 <li class="list-group-item" onclick="toggleAnswer(4)">Will there be Wi-Fi on Mars during Cosmic Quest?<span>&#43;</span></li>
                 <p class="answer">While Mars itself lacks Wi-Fi hotspots (for now), our mission control team has you covered. Connect to our CosmicNet™ network for uninterrupted streaming of talks, workshops, and alien dance-offs.</p>
             </ul>
-            <button id="faqs-close"> Close</button>
+            <button id="close-button" onclick="closeModal" > Close</button>
         </div>
     </div>
 
