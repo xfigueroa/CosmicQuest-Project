@@ -74,6 +74,7 @@ span {
 
 svg {
     margin-left: 20px;
+    margin-top: 10px;
 }
 
 a {
@@ -119,7 +120,7 @@ footer {
     left: 0;
     right: 0;
     margin-inline: auto;
-    margin-block: -4%;     
+    margin-block: -3%;     
     width: 350px;
     height: 350px;   
 }
