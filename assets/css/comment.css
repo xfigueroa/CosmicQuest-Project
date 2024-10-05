@@ -1,14 +1,10 @@
 *{
     margin: 0;
+    box-sizing: border-box;
 }
-
 :root{
     --mainColor: rgb(41, 45, 66);
     --secondColor: rgb(126, 214, 255);
-}
-*{
-    margin: 0;
-    box-sizing: border-box;
 }
 
 @font-face {
@@ -16,11 +12,7 @@
     src: url(https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@200&family=Unica+One&display=swap);
 }
 
-html{
-    margin: 0;
-    
-}
-
+/* Tags */
 body {
     font-family: "Playwrite HU", cursive, sans-serif;
     margin: 0;
@@ -42,16 +34,6 @@ header{
     flex-direction: column;    
 }
 
-.banner {
-    width: 100%; 
-    height: 150px; 
-    overflow: hidden; 
-}
-
-.banner-bg{
-    width: 100%;
-}
-
 nav {
     background-color: var(--secondColor); 
     border-radius: 0 0 10px 10px;  
@@ -65,12 +47,6 @@ nav ul {
     justify-content: center; 
     align-items: center;    
 }
-
-.navDummy{
-    background-color: var(--secondColor);
-    width: 300px;
-}
-
 nav ul li {
     margin: 0 10px; 
     padding: 10px 15px; 
@@ -88,22 +64,6 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-.logo {
-    position: absolute; 
-    left: 0;
-    right: 0;
-    margin-inline: auto;
-    margin-block: -4%;     
-    width: 350px; 
-    pointer-events: none;      
-}
-  
-.content {
-    padding: 20px;
-    text-align: center;
-}
-
-/* --------------- main code */
 main{
     display: flex;
     width: 70%;
@@ -112,43 +72,6 @@ main{
     gap: 20px;  
     margin-top: 20px; 
 }
-.comment-box{
-    display: flex;
-    flex-direction: column; 
-    border: 2px solid var(--mainColor);
-    width: 100%;
-    height: 850px;
-    background-color: var(--secondColor);
-       
-}
-.comment-box .comment{
-    margin: 5px 15px 0 15px;
-    background-color: var(--mainColor);
-    padding: 0 10px 0 10px;
-    border: 2px solid white;
-    box-shadow: 2px 2px 5px rgb(0, 0, 0);
-    transition: 0.3s ease;
-}
-.comment-box .comment:hover{
-    margin: 5px 15px 0 15px;
-    background-color: rgb(22, 22, 59);
-    padding: 0 10px 0 10px;
-    border: 2px solid white;
-    box-shadow: 2px 2px 5px rgb(255, 255, 255);
-}
-.comment-box .comment-input{
-    margin: 5px 15px;
-    height: 60px;
-
-}
-.comment h4{
-    border-bottom: 2px solid white;
-}
-
-
-/* ------------------Upcoming Section------------------ */
-
-/* --------------------Xavier main code */
 
 footer {
     background-color: var(--secondColor); 
@@ -164,8 +87,74 @@ footer {
     font-size: large;
 }
 
-/* --------------Modals FAQS--------------- */
+/* Class */
+.banner {
+    width: 100%; 
+    height: 150px; 
+    overflow: hidden; 
+}
 
+.banner-bg{
+    width: 100%;
+}
+
+.navDummy{
+    background-color: var(--secondColor);
+    width: 300px;
+}
+
+.logo {
+    position: absolute; 
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    margin-block: -4%;     
+    width: 350px; 
+    pointer-events: none;      
+}
+  
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.comment-box{
+    display: flex;
+    flex-direction: column; 
+    border: 2px solid var(--mainColor);
+    width: 100%;
+    height: 850px;
+    background-color: var(--secondColor);
+       
+}
+
+.comment-box .comment{
+    margin: 5px 15px 0 15px;
+    background-color: var(--mainColor);
+    padding: 0 10px 0 10px;
+    border: 2px solid white;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+    transition: 0.3s ease;
+}
+
+.comment-box .comment:hover{
+    margin: 5px 15px 0 15px;
+    background-color: rgb(22, 22, 59);
+    padding: 0 10px 0 10px;
+    border: 2px solid white;
+    box-shadow: 2px 2px 5px rgb(255, 255, 255);
+}
+
+.comment-box .comment-input{
+    margin: 5px 15px;
+    height: 60px;
+}
+
+.comment h4{
+    border-bottom: 2px solid white;
+}
+
+/* --------------Modals FAQS--------------- */
 .modalContainer{
     background-color: rgba(0,0,0, 0.3);
     position: fixed;
@@ -180,11 +169,11 @@ footer {
     pointer-events: none;
     transition: opacity 0.3s ease;
 }
+
 .modalContainer.active {
     opacity: 1;
     pointer-events: auto;
 }
-
 
 .modal-faqs{
     background-color: white;
@@ -198,16 +187,14 @@ footer {
     overflow: auto;   
 }
 
-
-
 .faqs-title{
     display: flex;    
     flex-direction: column;
     align-items: center;  
     margin-bottom: 20px;
     width: 100%;
-
 }
+
 .faqs-title h2{
     color: white;
     display: flex;
@@ -219,10 +206,11 @@ footer {
     justify-content: center;
     z-index: 0.5;     
 }
+
 .list-group{
     padding: 0;
-    
 }
+
 .list-group-item{
     list-style-type: none;
     margin: 10px;
@@ -230,28 +218,26 @@ footer {
     justify-content: space-between;    
     border-bottom: 1px solid black;
 }
+
 .list-group li {
     font-size: large;
     cursor: pointer;
-    
-    
 }
+
 .list-group p {
     font-size: small;
-    padding: 5px 10px;
-    
+    padding: 5px 10px; 
 }
+
 .answer {
     display: none;
 }
+
 .show {
     display: block;
 }
 
-
 /* ----------------comment modal */
-
-
 .modal{
     background-color: rgba(0,0,0, 0.3);
     position: fixed;
@@ -266,10 +252,12 @@ footer {
     pointer-events: none;
     transition: opacity 0.3s ease;
 }
+
 .modal.is-active{
     opacity: 1;
     pointer-events: auto;
 }
+
 .modal-content{
     background-color: white;
     width: 700px;
@@ -319,10 +307,12 @@ footer {
     width: 600px;
     height: 200px;
 }
+
 #comment-form input{
     width: 300px;
     height: 40px;
 }
+
 .modal-close,
 #submit {
     cursor: pointer;
@@ -335,26 +325,32 @@ footer {
     font-size: 15px;
     color: aliceblue;
 }
+
 .modal-close:hover,     
 #submit:hover {
     background: var(--secondColor);
 }
+
 .modal-close > svg,      
 #submit > svg {
     width: 34px;
     margin-left: 10px;
     transition: transform 0.3s ease-in-out;
 }
+
 .modal-close:hover svg,      
 #submit:hover svg {
     transform: translateX(5px);
 }
+
 .modal-close:active,      
 #submit:active {
     transform: scale(0.95);
 }
-      
 
+#close-button{
+    font-family: "Unica One", sans-serif;
+}
 
 
 

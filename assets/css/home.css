@@ -16,11 +16,7 @@
     src: url(https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@200&family=Unica+One&display=swap);
 }
 
-html{
-    margin: 0;
-    
-}
-
+/* Tags */
 body {
     font-family: "Playwrite HU", cursive, sans-serif;
     margin: 0;
@@ -42,16 +38,6 @@ header{
     flex-direction: column;    
 }
 
-.banner {
-    width: 100%; 
-    height: 150px; 
-    overflow: hidden; 
-}
-
-.banner-bg{
-    width: 100%;
-}
-
 nav {
     background-color: var(--secondColor); 
     border-radius: 0 0 10px 10px;  
@@ -64,11 +50,6 @@ nav ul {
     display: flex;
     justify-content: center; 
     align-items: center;    
-}
-
-.navDummy{
-    background-color: var(--secondColor);
-    width: 300px;
 }
 
 nav ul li {
@@ -87,6 +68,70 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: underline;
 }
+main{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;  
+    margin-top: 20px; 
+}
+
+section{    
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+section a{
+    margin-top: 5px;
+    width: 98%;
+    height: 70px;
+    box-shadow: 0 0 5px black; 
+    padding: 0;
+    transition: 0.3s ease-in-out; 
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+section a:hover{    
+    transform: scale(1.2);
+    z-index: 1;
+    box-shadow: 0px 0px 25px var(--accent);
+}
+
+footer {
+    background-color: var(--secondColor); 
+    text-align: center; 
+    padding: 10px 0; 
+    position: relative; 
+    bottom: 0; 
+    width: 100%;
+    margin: 20px 0 0 0; 
+    color: black; 
+    border-radius: 10px 10px 0 0;
+    font-family: "Unica One", sans-serif;
+    font-size: large;
+}
+
+/* Class */
+.banner {
+    width: 100%; 
+    height: 150px; 
+    overflow: hidden; 
+}
+
+.banner-bg{
+    width: 100%;
+}
+
+.navDummy{
+    background-color: var(--secondColor);
+    width: 300px;
+}
 
 .logo {
     position: absolute; 
@@ -100,16 +145,6 @@ nav ul li a:hover {
 .content {
     padding: 20px;
     text-align: center;
-}
-
-/* ---------------Xavier main code */
-main{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;  
-    margin-top: 20px; 
 }
 
 .mainBoxtop{
@@ -162,7 +197,6 @@ main{
     border-radius: 10px;
 }
 
-/* -------- */
 .thisWeek-title{
     display: flex;    
     flex-direction: column;
@@ -189,13 +223,6 @@ main{
     border-radius: 10px;
 }
 
-section{    
-    width: 100%;
-    height: 350px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;   
-}
 .list-img{
     display: flex;   
     flex-direction: column;
@@ -207,54 +234,35 @@ section{
     text-shadow: 2px 2px 2px black;    
     line-height: 0.5;
 }
-.list-img:active{
 
-}
 .list-img strong{
     color: var(--secondColor);
 }
+
 .thisweek-img1{
     background-image: url(../images/alien\ invasion\ laser\ tag.jpg);
     background-position: center center;
     background-size: cover;
-    
 }
+
 .thisweek-img2{
     background-image: url(../images/dust\ surfing.jpg);
     background-position: center center;
     background-size: cover;
 }
+
 .thisweek-img3{
     background-image: url(../images/fiend\ concert.jpg);
     background-position: center center;
     background-size: cover;
 }
+
 .thisweek-img4{
     background-image: url(../images/red\ planet\ rendezvous.jpg);
     background-position: center center;
     background-size: cover;
 }
 
-section a{
-    margin-top: 5px;
-    width: 98%;
-    height: 70px;
-    box-shadow: 0 0 5px black; 
-    padding: 0;
-    transition: 0.3s ease-in-out; 
-    border-radius: 5px;
-    text-decoration: none;
-    color: white;
-}
-
-
-section a:hover{    
-    transform: scale(1.2);
-    z-index: 1;
-    box-shadow: 0px 0px 25px var(--accent);
-}
-
-/* ------------------Upcoming Section------------------ */
 .main-box2{
     display: flex;
     flex-direction: column;
@@ -340,24 +348,13 @@ section a:hover{
     background-repeat: no-repeat;
     background-size: cover;
 }
-/* --------------------Xavier main code */
 
-footer {
-    background-color: var(--secondColor); 
-    text-align: center; 
-    padding: 10px 0; 
-    position: relative; 
-    bottom: 0; 
-    width: 100%;
-    margin: 20px 0 0 0; 
-    color: black; 
-    border-radius: 10px 10px 0 0;
+/* ID */
+#close-button{
     font-family: "Unica One", sans-serif;
-    font-size: large;
 }
 
-/* --------------Modals Testin--------------- */
-
+/* --------------Modals --------------- */
 .modalContainer{
     background-color: rgba(0,0,0, 0.3);
     position: fixed;
@@ -372,11 +369,11 @@ footer {
     pointer-events: none;
     transition: opacity 0.3s ease;
 }
+
 .modalContainer.active {
     opacity: 1;
     pointer-events: auto;
 }
-
 
 .modal-faqs{
     background-color: white;
@@ -390,16 +387,14 @@ footer {
     overflow: auto;   
 }
 
-
-
 .faqs-title{
     display: flex;    
     flex-direction: column;
     align-items: center;  
     margin-bottom: 20px;
     width: 100%;
-
 }
+
 .faqs-title h2{
     color: white;
     display: flex;
@@ -411,10 +406,11 @@ footer {
     justify-content: center;
     z-index: 0.5;     
 }
+
 .list-group{
     padding: 0;
-    
 }
+
 .list-group-item{
     list-style-type: none;
     margin: 10px;
@@ -422,22 +418,21 @@ footer {
     justify-content: space-between;    
     border-bottom: 1px solid black;
 }
+
 .list-group li {
     font-size: large;
     cursor: pointer;
-    
-    
 }
+
 .list-group p {
     font-size: small;
     padding: 5px 10px;
-    
 }
+
 .answer {
     display: none;
 }
+
 .show {
     display: block;
 }
-
-/* ------------------------------- Modal Testing End --------- */
