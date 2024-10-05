@@ -6,7 +6,7 @@ The main objective of this project is to create an event calendar for local Mart
 
 ## Known Issues
 
-* Calendar event cards is linked to an invalid URL.
+* There's no URL linked to the event cards.
 
 ## Roadmap
 
