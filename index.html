@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cosmic Quest</title>
-    <link rel="stylesheet" href="./assets/css/comment.css">
-    <script src="./assets/js/comment.js"></script>
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <script src="./assets/js/home.js"></script>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,21 +28,23 @@
             </ul>
         </nav>
     </header>
-
-    <section>
+    
+    
         <div class="modalContainer" id="modalContaier">
             <div class="modal-faqs">
                 <div class="faqs-title">                
                     <h2>FAQS</h2>
                     <div class="title-background"></div>
                 </div>
+                
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item" onclick="toggleAnswer(0)">What is Cosmic Quest? <span>&#43;</span></li>
                     <p class="answer"> Cosmic Quest is an otherworldly event taking place on the red sands of Mars. It's a unique fusion of science, art, and adventure, where participants can explore the mysteries of the Martian landscape, attend captivating talks by interplanetary experts, and witness breathtaking celestial phenomena.</p>
                     <li class="list-group-item" onclick="toggleAnswer(1)">How do I get to Mars for Cosmic Quest?<span>&#43;</span></li>
                     <p class="answer">As for now we have the Cosmic Uber  option, where you just have to open your Cosmic Uber app. Request a ride to Mars. Choose from options like “Standard Rocket,” “Hyperloop Wormhole,” or “Flying Saucer Pool Party.”
                         Your driver, Zog the Nebula Navigator, will arrive in approximately 3.5 light-years.
-                        Don't forget to tip in stardust!</p>
+                        Don't forget to tip in stardust!                    
+                    </p>
                     <li class="list-group-item" onclick="toggleAnswer(2)">What activities can I expect during Cosmic Quest?<span>&#43;</span></li>
                     <p class="answer">During Cosmic Quest, expect stargazing sessions, Martian art exploration, alien mixology workshops, astro-trivia challenges, and live Q&A with a Martian geologist!</p>
                     <li class="list-group-item" onclick="toggleAnswer(3)">Is there a dress code for Cosmic Quest?<span>&#43;</span></li>
@@ -53,29 +55,45 @@
                 <button id="close-button" onclick="closeModal(0)" > Close</button>
             </div>
         </div>
-    </section>
+    
     
     <main>
-        <button class="js-modal-trigger" data-target="modal-js-example" id="leave-comment">Leave a comment</button> 
-        <div class="comment-box">
+        <div class="mainBoxtop">
+            <div class="main-box1 aboutUs-box">
+                <div class="aboutUs-title">
+                    <h2>About Us</h2>
+                    <div></div>
+                    <p>Be a pioneer in an extraordinary adventure as we gather on Mars! This is your chance to be part of a groundbreaking community where innovation meets exploration. With a calendar packed full of thrilling events, from interstellar workshops to cosmic celebrations, there's something for everyone. Don't miss the opportunity to connect, collaborate, and create unforgettable memories in the Red Planet's vibrant atmosphere. Join us and help shape the future of life on Mars!
+                    </p>
+                </div>
+            </div>
+        <div class="main-box1 thisWeek-box">
+            <div class="thisWeek-title">
+                <h2>This Week</h2>
+                <div class="thisweek-bg"></div>
+                    <section>
+                        <a href="./eventcalendar.html" class="list-img thisweek-img1"><strong>Alien Invansion Laser Tag</strong><br>Du iv @ 11:00</a>
+                        <a href="./eventcalendar.html" class="list-img thisweek-img2"><strong>Dust Surging</strong> <br>Du vi @ 21:00</a>
+                        <a href="./eventcalendar.html" class="list-img thisweek-img3"><strong>Fiend Concert</strong> <br>Du ix @ 18:00</a>
+                        <a href="./eventcalendar.html" class="list-img thisweek-img4"><strong>Redezvous</strong> <br>Du x @ 15:00</a>
+                    </section>
+                </div>
+            </div>
         </div>
-        <div class="modal" id="comment-modal">
-            <div class="modal-background"></div>
-            <div class="modal-content">
-              <form action="Submit" id="comment-form">
-                <label for="Name" id="userName">User Name</label><br>
-                <input class="input is-normal"  type="text"  placeholder="Username"></input><br>
-                <label for="title" id="title">Title</label><br>
-                <input class="input is-normal"  type="text"  placeholder="Title"></input><br>
-                <label for="comment" id="comment-lable">Comment</label><br>
-                <textarea name="comment" id="comment" cols="30" rows="10"></textarea><br>
-                <button type="submit" id="submit">Submit</button>
-                <button class="modal-close is-large" aria-label="close" >Close</button>
-              </form>
-            </div>            
-          </div>
+        <div class="main-box2 upcoming-box">
+            <div class="upcoming-sec-title">                
+                <h2>Upcoming Events</h2>
+                <div class="title-background"></div>
+            </div>
+            <div class="upcom-img-box">
+                <a href="./eventcalendar.html" class="imgBox img1"></a>                 
+                <a href="./eventcalendar.html" class="imgBox img2"></a>                
+                <a href="./eventcalendar.html" class="imgBox img3"></a>                
+                <a href="./eventcalendar.html" class="imgBox img4"></a>                
+            </div>
+        </div>
     </main>
-    
+
     <footer>
         <p>From Team Fiend ©</p>
     </footer>
