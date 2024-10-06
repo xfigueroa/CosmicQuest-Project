@@ -10,6 +10,7 @@ The main objective of this project is to create an event calendar for local Mart
 
 ## Roadmap
 
+* Add media query.
 * Provide event details.
 * Create event calendar for the entire year.
 * Add a category section.
