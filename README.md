@@ -1,8 +1,11 @@
 # Event Calendar Project
 
+<img src="./assets/images/Cosmic-Quest-Logo.png">
+https://xfigueroa.github.io/CosmicQuest-Project/
+
 ## Overview 
 
-The main objective of this project is to create an event calendar for local Martians and travelers to find events happening for the month. With this website users can easily find events that are happeing in Mars!
+The main objective of this project is to create an event calendar for local Martians and travelers to find events happening for the month. With this website users can easily find events that are happeing in Mars! 
 
 ## Known Issues
 
